@@ -2,8 +2,8 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Yuyeong Kim
+  email:             uyeongkim@gm.gist.ac.kr
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -26,9 +26,9 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
-    # email:           <mail@domain.tld>
+    # twitter:         <username>
+    github:          https://github.com/uyeongkim
+    email:           uyeongkim@gm.gist.ac.kr
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -65,7 +65,7 @@ author1:
     # paypal:          <username>
     # download:        <url>
     # keybase          <username>
-
+    
 # Another author (optional)
 author2:
   name:              <firtname> <lastname>
