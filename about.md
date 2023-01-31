@@ -16,8 +16,8 @@ redirect_from:
 {:toc .large-only}
 
 ## About Me
-Hello! I'm yuyeong kim. I am B.S. undergraduate student in [Gwangu Institute of Sciece and Technology](https://www.gist.ac.kr/en/main.html), majoring in **electronic engineering and computer science**.\\
-I am currently working as a research intern in [Vision and Learning Lab](https://yonseivnl.github.io/) with [byeonghwi kim](https://github.com/bhkim94) and jinyeon kim under supervision of [jonghyun choi](https://scholar.google.com/citations?user=uiGWnm4AAAAJ&hl=en).\\
+Hello! I'm Yuyeong Kim. I am B.S. undergraduate student in [Gwangu Institute of Sciece and Technology](https://www.gist.ac.kr/en/main.html), majoring in **electronic engineering and computer science**.\\
+I am currently working as a research intern in [Vision and Learning Lab](https://yonseivnl.github.io/) with [Byeonghwi Kim](https://github.com/bhkim94) and Jinyeon Kim under supervision of [Jonghyun Choi](https://scholar.google.com/citations?user=uiGWnm4AAAAJ&hl=en).\\
 I am interested in embodied artificial intelligence and natural language processing.
 
 
@@ -44,11 +44,12 @@ Description further presented
 
 ## Awards and Honors
 * Hongboksun scholarship 
-  * `About 1800 dollars, Selected as a science and engineering scholarship student`
+  * `About 2000 dollars`
+  * `Selected as a science and engineering scholarship student`
 * GIST Summer Undergraduate Research Fellowship
 * National Science and Technology Scholarship for Bachelor’s program 
   * `Full tuition fee`
-* Scholarship for an academic excellence 
+* Scholarship for an academic excellence
   * `Full tuition fee`
 * Advisory member on instruction following dataset project in cooperation with NIA
 
