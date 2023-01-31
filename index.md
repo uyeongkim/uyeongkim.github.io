@@ -30,7 +30,7 @@ I am interested in embodied artificial intelligence and natural language process
 ## Projects
 * Devise language module understanding human command and plan to succeed in [ALFRED Challenge](https://leaderboard.allenai.org/alfred/submissions/public)\\
 
-[![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)\\
+[![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)
 
 * Join as an advisory member in embodied AI dataset generation project with NIA.
 
@@ -43,10 +43,13 @@ Description further presented
 {:.note}
 
 ## Awards and Honors
-* Hongboksun scholarship `About 1800 dollars, Selected as a science and engineering scholarship student`
+* Hongboksun scholarship 
+  * `About 1800 dollars, Selected as a science and engineering scholarship student`
 * GIST Summer Undergraduate Research Fellowship
-* National Science and Technology Scholarship for Bachelor’s program `Full tuition fee`
-* Scholarship for an academic excellence `Full tuition fee`
+* National Science and Technology Scholarship for Bachelor’s program 
+  * `Full tuition fee`
+* Scholarship for an academic excellence
+  * `Full tuition fee`
 * Advisory member on instruction following dataset project in cooperation with NIA
 
 <!-- ## Hydejack
