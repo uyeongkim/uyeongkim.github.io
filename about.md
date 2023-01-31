@@ -13,6 +13,10 @@ redirect_from:
 
 <!--author-->
 
+## About Me
+Hello! I'm yuyeong. I am undergraduate student in GIST.
+
+
 ## Hydejack
 
 A boutique Jekyll theme for hackers, nerds, and academics.  
