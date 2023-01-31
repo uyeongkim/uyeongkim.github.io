@@ -28,7 +28,7 @@ I am interested in embodied artificial intelligence and natural language process
 {:.note title="Exchange Studnet"}
 
 ## Projects
-* Devise language module understanding human command and plan to succeed in [ALFRED Challenge](https://leaderboard.allenai.org/alfred/submissions/public)\\
+* Devise language module understanding human command and plan to succeed in [ALFRED Challenge](https://leaderboard.allenai.org/alfred/submissions/public)
 
 [![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)
 
@@ -44,7 +44,7 @@ Description further presented
 
 ## Awards and Honors
 * Hongboksun scholarship 
-  * `About 2000 dollars`
+  * `USD 2,000 grant`
   * `Selected as a science and engineering scholarship student`
 * GIST Summer Undergraduate Research Fellowship
 * National Science and Technology Scholarship for Bachelor’s program 
