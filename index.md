@@ -44,7 +44,8 @@ Description further presented
 
 ## Awards and Honors
 * Hongboksun scholarship 
-  * `About 1800 dollars, Selected as a science and engineering scholarship student`
+  * `About 1800 dollars`
+  * `Selected as a science and engineering scholarship student`
 * GIST Summer Undergraduate Research Fellowship
 * National Science and Technology Scholarship for Bachelor’s program 
   * `Full tuition fee`
