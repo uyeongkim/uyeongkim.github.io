@@ -206,3 +206,7 @@ keybase:
 download:
   name: Download
   icon: icon-box-add
+researchgate:
+  name: ResearchGate
+  icon: icon-researchgate
+  prepend: "https://www.researchgate.net/"
