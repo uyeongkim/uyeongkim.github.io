@@ -32,7 +32,7 @@ I am interested in embodied artificial intelligence and natural language process
 
 [![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)
 
-* Join as an advisory member in embodied AI dataset generation project with NIA.
+* Served as an advisor to an embodied AI dataset generation project with NIA.
 
 Description further presented
 {:.note}

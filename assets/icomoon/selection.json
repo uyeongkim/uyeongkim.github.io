@@ -2200,7 +2200,7 @@
             "isMulticolor":false,
             "isMulticolor2":false,
             "tags":["researchgate"],
-            "grid":0
+            "grid":16
         },
         "attrs":[{"fill":"rgb(0, 204, 187)"}],
         "properties": {
