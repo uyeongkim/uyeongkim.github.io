@@ -30,7 +30,7 @@ I am interested in embodied artificial intelligence and natural language process
 ## Publication
 A Paper on Instruction Following
 {:.lead}
-Byeonghwi Kim, Jinyeon Kim, _Yuyeong Kim_, Cheolhong Min, Jonghyun Choi\\
+Byeonghwi Kim, Jinyeon Kim, <u>Yuyeong Kim</u>, Cheolhong Min, Jonghyun Choi\\
 *ICCV 2023* (under review)
 
 ## Projects
