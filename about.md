@@ -27,14 +27,17 @@ I am interested in embodied artificial intelligence and natural language process
 [University of California, Berkeley](https://www.berkeley.edu/)
 {:.note title="Exchange Studnet"}
 
+## Publication
+A Paper on Instruction Following
+{:.large}
+Byeonghwi Kim, Jinyeon Kim, _Yuyeong Kim_, Cheolhong Min, Jonghyun Choi
+*ICCV 2023*, (under review)
+
 ## Projects
 * Devised language module understanding natural language instruction and plan to succeed in [ALFRED Challenge](https://askforalfred.com/) and submitted paper to the ***ICCV 2023***.
 
 [![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)
 
-Submitted the paper to the ***ICCV 2023*** and now waiting for the reviews.
-<!-- {:.note} -->
-{:.note title="Paper Submission"}
 
 * Served as an advisor to an embodied AI dataset generation project with NIA.
 
