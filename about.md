@@ -33,7 +33,7 @@ I am interested in embodied artificial intelligence and natural language process
 [![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)
 
 Submitted paper to the ICCV 2023 and now waiting for the reviews.
-{.note title="Paper Submission"}
+{:.note title="Paper Submission"}
 
 * Served as an advisor to an embodied AI dataset generation project with NIA.
 
@@ -43,12 +43,12 @@ Submitted paper to the ICCV 2023 and now waiting for the reviews.
 * Hongboksun scholarship 
   * `USD 2,000 grant`
   * `Selected as a science and engineering scholarship student`
-* GIST Summer Undergraduate Research Fellowship
 * National Science and Technology Scholarship for Bachelor’s program 
   * `Full tuition fee`
 * Scholarship for an academic excellence
   * `Full tuition fee`
-* Advisory member on instruction following dataset project in cooperation with NIA
+* GIST Summer Undergraduate Research Fellowship
+* Advisory member on instruction following dataset project in cooperation with National Information Society Agency (NIA)
 
 <!-- ## Hydejack
 
