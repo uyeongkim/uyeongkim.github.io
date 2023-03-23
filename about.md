@@ -28,19 +28,16 @@ I am interested in embodied artificial intelligence and natural language process
 {:.note title="Exchange Studnet"}
 
 ## Projects
-* Devise language module understanding human command and plan to succeed in [ALFRED Challenge](https://leaderboard.allenai.org/alfred/submissions/public)
+* Devised language module understanding natural language instruction and plan to succeed in [ALFRED Challenge](https://leaderboard.allenai.org/alfred/submissions/public) and submitted paper to the ICCV 2023.
 
 [![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)
 
+Submitted paper to the ICCV 2023 and now waiting for the reviews.
+{.note title="Paper Submission"}
+
 * Served as an advisor to an embodied AI dataset generation project with NIA.
 
-Description further presented
-{:.note}
-
-* Join in video temporal action localization dataset generation project with NCSoft AI Center.
-
-Description further presented
-{:.note}
+* Joined in video temporal action localization dataset generation project with NCSoft AI Center.
 
 ## Awards and Honors
 * Hongboksun scholarship 
