@@ -28,11 +28,11 @@ I am interested in embodied artificial intelligence and natural language process
 {:.note title="Exchange Studnet"}
 
 ## Projects
-* Devised language module understanding natural language instruction and plan to succeed in [ALFRED Challenge](https://leaderboard.allenai.org/alfred/submissions/public) and submitted paper to the ICCV 2023.
+* Devised language module understanding natural language instruction and plan to succeed in [ALFRED Challenge](https://leaderboard.allenai.org/alfred/submissions/public) and submitted paper to the ***ICCV 2023***.
 
 [![ALFRED challenge](https://img.youtube.com/vi/1XoRLNmXffo/0.jpg)](https://www.youtube.com/watch?v=1XoRLNmXffo)
 
-Submitted paper to the ICCV 2023 and now waiting for the reviews.
+Submitted the paper to the ***ICCV 2023*** and now waiting for the reviews.
 {:.note}
 <!-- {:.note title="Paper Submission"} -->
 
