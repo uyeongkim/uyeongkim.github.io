@@ -29,9 +29,9 @@ I am interested in embodied artificial intelligence and natural language process
 
 ## Publication
 A Paper on Instruction Following
-{:.large}
-Byeonghwi Kim, Jinyeon Kim, _Yuyeong Kim_, Cheolhong Min, Jonghyun Choi
-*ICCV 2023*, (under review)
+{:.lead}
+Byeonghwi Kim, Jinyeon Kim, _Yuyeong Kim_, Cheolhong Min, Jonghyun Choi\\
+*ICCV 2023* (under review)
 
 ## Projects
 * Devised language module understanding natural language instruction and plan to succeed in [ALFRED Challenge](https://askforalfred.com/) and submitted paper to the ***ICCV 2023***.
