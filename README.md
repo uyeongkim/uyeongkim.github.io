@@ -1,20 +1,49 @@
-# Hydejack Starter Kit
+# Vonge
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+Vonge is a Personal portfolio/blog site template for Jekyll. Browse through a [live demo](https://jazzed-kale.cloudvent.net/).
+Increase the web presence of your brand with this configurable theme.
 
-## Quick Start
-### Running locally
-1. Clone repository (git users), or [download] and unzip.
-2. Open terminal, `cd` into root directory (where `_config.yml` is located)
-3. Run `bundle install` [^1]
-4. Run `bundle exec jekyll serve`
-5. Open <http://localhost:4000/hydejack-starter-kit/>
+![Vonge template screenshot](_screenshot.png)
 
-## What's next?
-* Open files and read the comments
-* Read the [docs](https://hydejack.com/docs/)
-* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
+Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
+The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
 
-[^1]: Requires Bundler. Install with `gem install bundler`.
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
 
-[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/vonge-jekyll-bookshop-template)
+
+## Features
+
+* Component library for website building
+* Fully configurable Website
+* Pre-built pages
+* Pre-styled components
+* Blog
+* Category pages
+* Testimonials
+* Portfolio
+* Live editing with [CloudCannon](http://cloudcannon.com/)
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* Search engine optimisation
+
+## Develop
+
+Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.0, but should support newer versions as well.
+
+Install the dependencies for Bookshop:
+
+~~~bash
+$ npm install
+~~~
+
+Install the Jekyll dependencies with [Bundler](http://bundler.io/):
+
+~~~bash
+$ npm run install-jekyll
+~~~
+
+Run the website:
+
+~~~bash
+$ npm start
+~~~
