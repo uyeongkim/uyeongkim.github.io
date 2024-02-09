@@ -2,17 +2,23 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Yuyeong Kim
+  email:             youyoung@kaist.ac.kr
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    Hello and welcome!
+    I am a master's student in the [Data Mining Lab](https://sites.google.com/view/kaistdata) at KAIST, where I focus on understanding the collective behavior of state-of-the-art generative models. 
+    My research is centered around key areas like **social network mining** and **large language models (LLMs)**.
+
+    After earning my bachelor's degree in Electrical Engineering and Computer Science from [GIST](https://www.gist.ac.kr/kr/main.html), I interned at [Yonsei University's Vision and Learning Lab](https://yonseivnl.github.io/). 
+    There, I collaborated with [professor Jonghyun Choi](https://ppolon.github.io/) and [researcher Byungwook Kim](https://bhkim94.github.io/), contributing to an ICCV conference paper on autonomous robot planning for interaction and navigation using natural language.
+
+    My primary research question revolves around the behavioral implications of *advanced generative AI models*.
+    Through this blog, I look forward to sharing insights from my academic journey and explorations in this exciting field.
+
+    Thank you for visiting, and I hope you find my work and thoughts engaging!
 
   # This photo will be used in the about section
   picture:
@@ -26,8 +32,8 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
+    # twitter:         <username>
+    github:          uyeongkim
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
@@ -67,16 +73,16 @@ author1:
     # keybase          <username>
 
 # Another author (optional)
-author2:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# author2:
+#   name:              <firtname> <lastname>
+#   email:             <mail@domain.tld>
+#   about:             |
+#     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+#     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-    Open `_data/authors.yml` to edit this text.
+#     Open `_data/authors.yml` to edit this text.
 
-  picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
+#   picture:           https://placehold.it/128x128
+#   twitter:           <username>
+#   github:            <username>
