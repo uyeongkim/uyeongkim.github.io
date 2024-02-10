@@ -4,7 +4,7 @@ title: Temporal Video Understanding
 description: >
    Proposal of new task set-up with *shot-detection* on TV entertainment program and new algorithm for newly proposed dataset with NCSoft AI Center
 image: 
-  path: /assets/img/blog/logo.jpg
+  path: ../../assets/img/blog/logo.jpg
 sitemap: false
 hide_last_modified: true
 ---
