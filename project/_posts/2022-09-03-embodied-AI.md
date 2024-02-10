@@ -4,8 +4,7 @@ title: Introducing Hydejack 9
 image: 
   path: /assets/img/blog/jeremy-bishop@0,5x.jpg
 description: >
-  Version 9 is the most complete version of Hydejack yet.
-  Modernized design, big headlines, and big new features.
+  Groundbreaking project: enhancing AI's task understanding and execution in the **ALFRED challenge**.
 sitemap: false
 ---
 
