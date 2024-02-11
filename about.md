@@ -14,18 +14,20 @@ redirect_from:
 <!--author-->
 
 * this unordered seed list will be replaced by the toc
-{:toc}
+{:toc .large-only}
 
 ## Publication
 ### Conference
-#### `ICCV` [Context-Aware Planning and Environment-Aware Memory for Instruction Following Embodied Agents](https://openaccess.thecvf.com/content/ICCV2023/html/Kim_Context-Aware_Planning_and_Environment-Aware_Memory_for_Instruction_Following_Embodied_Agents_ICCV_2023_paper.html)
+`ICCV` [Context-Aware Planning and Environment-Aware Memory for Instruction Following Embodied Agents](https://openaccess.thecvf.com/content/ICCV2023/html/Kim_Context-Aware_Planning_and_Environment-Aware_Memory_for_Instruction_Following_Embodied_Agents_ICCV_2023_paper.html)
+{:.lead}
   - Won **1**st prize in [ALFRED challenge](https://askforalfred.com/)
   - Presented at: *ICCV 2023*
   - Authors: Byeonghwi Kim, Jinyeon Kim, **Yuyeong Kim**, Cheolhong Min, Jonghyun Choi
   - Summary: Our paper introduces the CPEM (Context-aware Planner and Environment-aware Memory) embodied agent, revolutionizing AI agents' ability to perform household tasks. CPEM's unique approach to integrating contextual data and maintaining updated spatial object arrangements results in significantly enhanced visual navigation and object interaction capabilities. This method has shown exceptional improvements in task success across various challenging benchmarks, particularly in new and unfamiliar environments.
 
 ### Workshop
-#### `CVPRW` [Generalist Language Grounding Agents Challenge](https://askforalfred.com/EAI23/)
+`CVPRW` [Generalist Language Grounding Agents Challenge](https://askforalfred.com/EAI23/)
+{:.lead}
   - Won **1**st prize
   - Presented at: *CVPRW 2023*
 
