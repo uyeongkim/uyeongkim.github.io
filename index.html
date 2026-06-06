@@ -1,11 +1,708 @@
----
-layout: blog
-title: Blog
-description: >
-  The official Hydejack blog. Version updates, example content and how-to guides on how to blog with Jekyll.
-last_modified_at: 2018-08-03
-no_link_title: false 
-no_excerpt: false 
-hide_image: false
-cover: true
----
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./icon.png" type="image/png" />
+<title>Yuyeong Kim's Homepage</title>
+<meta name="description" content="Yuyeong Kim, an AI researcher" />
+<meta name="keywords" content="yuyeong kim kaist ai graph representation learning multi-agent embodied ai" />
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+<link media="all" href="style.css" type="text/css" rel="StyleSheet">
+<style>
+html:not(.dark-mode) body.yy-page {
+    --bg: #f6f1ea;
+    --bg-accent: #efe8df;
+    --accent: #a56b3f;
+    --accent-strong: #7b4c2c;
+    --accent-soft: rgba(165, 107, 63, 0.12);
+    --accent-border: rgba(165, 107, 63, 0.25);
+    --accent-glow: rgba(165, 107, 63, 0.2);
+    --highlight: #e3b377;
+    --accent-rgb: 165, 107, 63;
+    --highlight-rgb: 227, 179, 119;
+    --nav-bg: rgba(249, 244, 236, 0.78);
+}
+
+body.yy-page #mainImg {
+    border-radius: 18px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border);
+}
+
+html:not(.dark-mode) body.yy-page .content-wrapper,
+html:not(.dark-mode) body.yy-page .profile-pane #container,
+html:not(.dark-mode) body.yy-page #container nav li,
+html:not(.dark-mode) body.yy-page .pub-item,
+html:not(.dark-mode) body.yy-page .experience-item,
+html:not(.dark-mode) body.yy-page #container .vitae-item {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(190, 172, 150, 0.5);
+    box-shadow: 0 10px 24px rgba(88, 64, 46, 0.12);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+}
+
+html:not(.dark-mode) body.yy-page #container nav li:hover,
+html:not(.dark-mode) body.yy-page .pub-item:hover,
+html:not(.dark-mode) body.yy-page .experience-item:hover,
+html:not(.dark-mode) body.yy-page #container .vitae-item:hover {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(165, 107, 63, 0.35);
+}
+
+body.yy-page .project-item {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 6px 16px;
+    align-items: start;
+}
+
+body.yy-page .project-date {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 13.5px;
+}
+
+body.yy-page .project-title {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+body.yy-page .project-desc {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+body.yy-page .project-desc + .project-desc {
+    margin-top: 4px;
+}
+
+@media (max-width: 760px) {
+    body.yy-page .project-item {
+        grid-template-columns: 1fr;
+    }
+
+    body.yy-page .project-date {
+        margin-bottom: 2px;
+    }
+}
+</style>
+
+<!-- Dark mode detection (runs immediately to prevent flash) -->
+<script>
+(function() {
+    try {
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            document.documentElement.classList.add('dark-mode');
+        }
+    } catch (e) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark-mode');
+        }
+    }
+})();
+</script>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body class="yy-page">
+<a class="anchor" id="top"></a>
+
+<!-- Fixed Navigation Bar -->
+<div id="navbar">
+    <div id="container">
+        <div id="plain">Yuyeong Kim</div>
+        <a href="#top">Home</a>
+        <a href="#news">News</a>
+        <a href="#vitae">Research</a>
+        <a href="#pub">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#service">Service</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa fa-moon-o"></i>
+        </button>
+    </div>
+</div>
+
+<div class="page-layout">
+    <aside class="profile-pane">
+        <!-- Profile Section -->
+        <div id="name">
+            <img id="mainImg" src="yuyeong/portrait.jpg" class="left" width="200" height="260" alt="Yuyeong Kim">
+            <h1>
+                <a href="/">Yuyeong Kim</a>
+            </h1>
+            <div style="font-size: 13.5px; line-height: 1.6;">
+                <div class="profile-header">
+                <p style="padding: 0; margin: 0 0 15px 0;">
+                    <strong>M.S. Candidate</strong><br>
+                    <a href="https://gsai.kaist.ac.kr/?lang=ko" target="_blank">KAIST Graduate School of AI</a><br>
+                    <a href="https://www.kaist.ac.kr/en/" target="_blank">Korea Advanced Institute of Science and Technology</a><br>
+                    <span style="color: #666;">yykim [at] ncsoft [dot] com</span>
+                </p>
+                <p style="padding: 0; margin: 0 0 15px 0;">
+                    <strong>Current Affiliations</strong><br>
+                    - <a href="https://sites.google.com/view/kaistdata" target="_blank">Data Mining Lab</a><br>
+                    - <a href="https://nc-ai.com/en" target="_blank">NC AI (Incoming Research Engineer)</a><br>
+                </p>
+                <div class="profile-links" style="margin: 0 0 12px 0;">
+                    <a href="https://drive.google.com/file/d/11gos4aV2-OVFtdBXmggK1XeORjxuiwSz/view?usp=sharing" target="_blank" class="profile-link-text">CV</a>
+                    <a href="https://www.linkedin.com/in/yuyeong-kim-9bba2934b/" target="_blank" class="profile-link-icon" aria-label="LinkedIn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M22.23 0H1.77C.79 0 0 .78 0 1.74V22.26C0 23.22.79 24 1.77 24h20.46C23.2 24 24 23.22 24 22.26V1.74C24 .78 23.2 0 22.23 0zM7.09 20.45H3.56V9h3.53v11.45zM5.32 7.43c-1.13 0-2.05-.93-2.05-2.07 0-1.15.92-2.07 2.05-2.07s2.05.92 2.05 2.07c0 1.14-.92 2.07-2.05 2.07zM20.45 20.45h-3.53v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67h-3.53V9h3.39v1.56h.05c.47-.9 1.62-1.86 3.33-1.86 3.56 0 4.22 2.34 4.22 5.38v6.37z"/>
+                        </svg>
+                    </a>
+                </div>
+                </div>
+                <p style="padding: 0; margin: 0;">
+                    Hi! I am a M.S. candidate at the <a href="https://gsai.kaist.ac.kr/?lang=ko" target="_blank">KAIST Graduate School of AI</a>,
+                    advised by <a href="https://kijungs.github.io" target="_blank">Kijung Shin</a> at the
+                    <a href="https://sites.google.com/view/kaistdata" target="_blank">Data Mining Lab</a> since Fall 2023.
+                    I am also a Research Engineer at <a href="https://nc-ai.com/en" target="_blank">NC AI</a>.
+                    Before that, I was a SW engineering intern at <a href="https://www.graphai.io" target="_blank">GraphAI</a>.
+                    My research interests include large language models, graph representation learning, multi-agent systems,
+                    and embodied AI.
+                </p>
+                <a id="toggle-bio" class="bio-toggle" style="margin-top: 10px;">Full bio <span class="bio-caret">&#9660;</span></a>
+                <div id="full-bio" class="full-bio">
+                    <p>
+                        I obtained my B.S. degree in Electrical Engineering and Computer Science from
+                        <a href="https://www.gist.ac.kr" target="_blank">GIST</a>. During my undergraduate studies, I was
+                        fortunate to work under the guidance of <a href="https://snumprlab.github.io" target="_blank">Jonghyun Choi</a>
+                        at <a href="https://www.yonsei.ac.kr/en_sc/" target="_blank">Yonsei University</a> and
+                        <a href="https://jeanyson.github.io" target="_blank">Jeany Son</a> at GIST.
+                    </p>
+                    <p>
+                        My research has been published in venues such as ICCV, CVPR Workshops, and WWW.
+                    </p>
+                    <div style="text-align: center; margin-top: 8px;">
+                        <a id="hide-bio" class="bio-toggle" style="margin-top: 6px;">Hide full bio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="content-pane">
+        <div class="content-wrapper">
+        <!-- News Section -->
+        <a class="anchor" id="news"></a>
+        <div id="container">
+            <h2 class="section-title">News</h2>
+            <nav style="margin-top: 0.5em;">
+                <ul>
+                    <li><span class="date">2025.11</span> Joining <a href="https://nc-ai.com/en" target="_blank">NC AI</a> as a Research Engineer this December.</li>
+                    <li><span class="date">2025.09</span> Joined <a href="https://www.graphai.io" target="_blank">GraphAI</a> as a SW Engineering Intern.</li>
+                    <li>
+                        <a id="toggle-news">All News <span class="caret">&#9660;</span></a>
+                        <ul id="old-news">
+                            <li><span class="date">2025.01</span> One paper accepted to <b>WWW 2025</b>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Research Experience Section -->
+        <a class="anchor" id="vitae"></a>
+        <div id="container">
+            <h2 class="section-title">Research Experience</h2>
+
+            <div class="experience-item">
+                <div class="pub-image">
+                    <img src="yuyeong/nc-ai.png" alt="NC AI" style="object-fit: contain; background: transparent;">
+                </div>
+                <div class="pub-content">
+                    <div class="pub-title" style="font-size: 14px;">
+                        <a href="https://nc-ai.com/en" target="_blank">NC AI</a>
+                    </div>
+                    <div class="exp-desc">
+                        Incoming Research Engineer, VARCO Chat Division (Dec. 2025 expected start)
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="pub-image">
+                    <img src="yuyeong/graphai.png" alt="GraphAI" style="object-fit: contain; background: transparent;">
+                </div>
+                <div class="pub-content">
+                    <div class="pub-title" style="font-size: 14px;">
+                        <a href="https://www.graphai.io" target="_blank">GraphAI</a>
+                    </div>
+                    <div class="exp-desc">
+                        SW Engineering Intern, R&amp;D Division (Sep. 2025 - Dec. 2025)
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 15px; font-weight: 600; margin: 24px 0 10px 15px;">Education</h3>
+
+            <div class="experience-item">
+                <div class="pub-image">
+                    <img src="yuyeong/kaist-logo.png" alt="KAIST" style="object-fit: contain; background: transparent;">
+                </div>
+                <div class="pub-content">
+                    <div class="pub-title" style="font-size: 14px;">
+                        <a href="https://gsai.kaist.ac.kr/?lang=ko" target="_blank">KAIST Graduate School of AI</a>
+                    </div>
+                    <div class="exp-desc">
+                        M.S. in Artificial Intelligence (Sep. 2023 - Feb. 2026 expected)<br>
+                        Data Mining Lab, Advisor: <a href="https://kijungs.github.io" target="_blank">Kijung Shin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="pub-image">
+                    <img src="yuyeong/gist-logo.png" alt="GIST" style="object-fit: contain; background: transparent;">
+                </div>
+                <div class="pub-content">
+                    <div class="pub-title" style="font-size: 14px;">
+                        <a href="https://www.gist.ac.kr" target="_blank">Gwangju Institute of Science and Technology (GIST)</a>
+                    </div>
+                    <div class="exp-desc">
+                        B.S. in Electrical Engineering and Computer Science (Mar. 2019 - Aug. 2023)<br>
+                        Graduated Magna Cum Laude (tGPA 4.14 / 4.5, Major 4.22 / 4.5)
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="pub-image">
+                    <img src="yuyeong/uc-berkeley-logo.png" alt="UC Berkeley" style="object-fit: contain; background: transparent;">
+                </div>
+                <div class="pub-content">
+                    <div class="pub-title" style="font-size: 14px;">
+                        <a href="https://www.berkeley.edu" target="_blank">University of California, Berkeley</a>
+                    </div>
+                    <div class="exp-desc">
+                        Exchange Program (Jun. 2021 - Aug. 2021)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Publications Section -->
+        <a class="anchor" id="pub"></a>
+        <div id="container">
+            <h2 class="section-title">Publications</h2>
+            <p style="font-size: 12px; color: #666; margin-bottom: 2px;">Links provided where available.</p>
+            <div class="pub-tabs">
+                <button id="pub-tab-selected" class="pub-tab active">Selected</button>
+                <button id="pub-tab-all" class="pub-tab">All</button>
+            </div>
+            <div id="selected-publications">
+                <div class="pub-item compact" data-selected="true">
+                    <div class="pub-image">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="yuyeong/rwnn-teaser.png">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="RWNN teaser">
+                        </picture>
+                    </div>
+                    <div class="pub-content">
+                        <div class="pub-title">Empirical Evaluation of Walk Strategies and Model Sizes in Random-Walk Neural Networks</div>
+                        <div class="pub-authors"><b><u>Yuyeong Kim</u></b>, Kijung Shin</div>
+                        <div class="pub-venue">KCC 2025 <span class="pub-links-inline">[<a href="" target="_blank">Paper Coming Soon</a>]</span></div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-selected="true">
+                    <div class="pub-image">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="comingsoon.jpg">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Graphlets teaser">
+                        </picture>
+                    </div>
+                    <div class="pub-content">
+                        <div class="pub-title">Beyond Neighbors: Distance-Generalized Graphlets for Enhanced Graph Characterization</div>
+                        <div class="pub-authors">Geon Lee, Kijung Shin, Yeongho Kim, <b><u>Yuyeong Kim</u></b></div>
+                        <div class="pub-venue">WWW 2025 <span class="pub-links-inline">[<a href="https://dl.acm.org/doi/10.1145/3696410.3714558" target="_blank">Paper</a> | <a href="https://github.com/thisis05/EDGE" target="_blank">Code</a>]</span></div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-selected="true">
+                    <div class="pub-image">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="comingsoon.jpg">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="CAPEAM teaser">
+                        </picture>
+                    </div>
+                    <div class="pub-content">
+                        <div class="pub-title">Context-Aware Planning and Environment-Aware Memory for Instruction Following Embodied Agents</div>
+                        <div class="pub-authors">Byeonghwi Kim, Cheolhong Min, Jinyeon Kim, Jonghyun Choi, <b><u>Yuyeong Kim</u></b></div>
+                        <div class="pub-venue">ICCV 2023 <span class="pub-links-inline">[<a href="https://openreview.net/pdf?id=7M0EzjugaN" target="_blank">Paper</a> | <a href="https://github.com/snumprlab/capeam" target="_blank">Code</a> | <a href="https://bhkim94.github.io/projects/CAPEAM/" target="_blank">Project</a>]</span></div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-selected="false">
+                    <div class="pub-image">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="comingsoon.jpg">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Psychopathology teaser">
+                        </picture>
+                    </div>
+                    <div class="pub-content">
+                        <div class="pub-title">Emergence of Psychopathological Computations in Large Language Models</div>
+                        <div class="pub-authors">Denny Borsboom, Hyeonjin Hwang, Jaemin Yoo, Kijung Shin, Kyuri Park, Sooyong Lee, Taekwan Kim, <b><u>Yuyeong Kim</u></b></div>
+                        <div class="pub-venue">arXiv 2025 <span class="pub-links-inline">[<a href="https://arxiv.org/html/2504.08016v1" target="_blank">Paper</a>]</span></div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-selected="false">
+                    <div class="pub-image">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="comingsoon.jpg">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="ECLAIR teaser">
+                        </picture>
+                    </div>
+                    <div class="pub-content">
+                        <div class="pub-title">ECLAIR: Event-Cognizant Language Interaction Embodied Robots</div>
+                        <div class="pub-authors">Byeonghwi Kim, Cheolhong Min, Jinyeon Kim, Jonghyun Choi, Taewoong Kim, <b><u>Yuyeong Kim</u></b></div>
+                        <div class="pub-venue">CVPRW 2023 <span class="pub-links-inline">[<a href="https://askforalfred.com/EAI23/" target="_blank">Paper</a>]</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <a class="anchor" id="projects"></a>
+        <div id="container">
+            <h2 class="section-title">Projects</h2>
+            <div style="padding-left: 0;">
+                <div class="vitae-item project-item">
+                    <div class="project-date">Sep. 2024 - Present (KAIST)</div>
+                    <div class="project-body">
+                        <div class="project-title">Graph Foundation Model</div>
+                        <div class="project-desc">Developing a transformer-based graph foundation model for universal graph representation.</div>
+                        <div class="project-desc">Keywords: Graph Representation Learning, Foundation Model</div>
+                    </div>
+                </div>
+                <div class="vitae-item project-item">
+                    <div class="project-date">Mar. 2025 - Jun. 2025 (KAIST)</div>
+                    <div class="project-body">
+                        <div class="project-title">Multi-Agent Code Generation with SHPPO</div>
+                        <div class="project-desc">Developed a multi-agent reinforcement learning framework for code generation using large language models.</div>
+                        <div class="project-desc">Keywords: Reinforcement Learning, Multi-Agent Systems, LLM Fine-Tuning</div>
+                    </div>
+                </div>
+                <div class="vitae-item project-item">
+                    <div class="project-date">Sep. 2022 - Feb. 2023 (GIST)</div>
+                    <div class="project-body">
+                        <div class="project-title">Embodied Artificial Intelligence</div>
+                        <div class="project-desc">Built an agent using human-annotated task descriptions to optimize planning and object interaction; 1st place, ALFRED challenge at CVPRW.</div>
+                        <div class="project-desc">Co-proposed and advised algorithm development for NIA's Korean household instruction-following dataset.</div>
+                        <div class="project-desc">Keywords: Autonomous Agent, Natural Language Processing, Multimodal Learning</div>
+                    </div>
+                </div>
+                <div class="vitae-item project-item">
+                    <div class="project-date">Aug. 2021 - Dec. 2021 (GIST)</div>
+                    <div class="project-body">
+                        <div class="project-title">Video Understanding</div>
+                        <div class="project-desc">Co-developed shot-detection task and algorithm for TV entertainment programs with NCSoft AI Center.</div>
+                        <div class="project-desc">Keywords: Video Understanding, Temporal Action Localization, Shot Detection</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Honors and Awards Section -->
+<a class="anchor" id="awards"></a>
+<div id="container">
+    <h2 class="section-title">Honors and Awards</h2>
+    <div style="padding-left: 0; padding-top: 6px; padding-bottom: 6px;">
+                <div class="vitae-item">
+                    <span class="vitae-date">Feb. 2023</span>
+                    <span class="vitae-title">1st Place in Generalist Language Grounding Agents Challenge (CVPRW)</span><br>
+                    <span style="display: block; margin-left: 165px; color: #555;">Built an action planning system that generates sub-actions to complete human instructions</span>
+                </div>
+                <div class="vitae-item">
+                    <span class="vitae-date">Sep. 2022 - Feb. 2023</span>
+                    <span class="vitae-title">National AI Project Advisory Member on Instruction-Following Dataset</span><br>
+                    <span style="display: block; margin-left: 165px; color: #555;">Collaborated with NIA on dataset development</span>
+                </div>
+                <div class="vitae-item">
+                    <span class="vitae-date">Mar. 2021 - Aug. 2021</span>
+                    <span class="vitae-title">Hongboksun Scholarship</span><br>
+                    <span style="display: block; margin-left: 165px; color: #555;">Awarded a $1,800 stipend for one semester</span>
+                </div>
+                <div class="vitae-item">
+                    <span class="vitae-date">Jun. 2021 - Sep. 2022</span>
+                    <span class="vitae-title">National Science and Technology Scholarship (Bachelor's Program)</span><br>
+                    <span style="display: block; margin-left: 165px; color: #555;">Full tuition coverage for academic excellence</span>
+                </div>
+                <div class="vitae-item">
+                    <span class="vitae-date">Jun. 2021 - Sep. 2021</span>
+                    <span class="vitae-title">GIST Summer Undergraduate Research Fellowship</span><br>
+                    <span style="display: block; margin-left: 165px; color: #555;">Conducted experiments on feature pyramid layer configurations</span>
+                </div>
+                <div class="vitae-item">
+                    <span class="vitae-date">Mar. 2020 - Sep. 2022</span>
+                    <span class="vitae-title">Academic Excellence Scholarship</span><br>
+                    <span style="display: block; margin-left: 165px; color: #555;">Full tuition coverage for outstanding academic performance</span>
+                </div>
+            </div>
+        </div>
+
+<!-- Academic Service Section -->
+<a class="anchor" id="service"></a>
+<div id="container">
+    <div style="margin: 6px 0 8px 2px;">
+        <a id="toggle-service" class="bio-toggle">More (Academic Service) <span class="service-caret">&#9660;</span></a>
+    </div>
+
+    <div id="service-section" style="display: none;">
+        <h2 class="section-title">Academic Service</h2>
+
+        <h3 style="font-size: 15px; font-weight: 600; margin: 20px 0 10px 15px;">Reviewer Services</h3>
+        <div style="padding-left: 0;">
+            <div class="vitae-item">
+                <span class="vitae-title">CVPR 2026</span><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <p>&copy; 2025 Yuyeong Kim. All rights reserved. Last updated: Jan 19th, 2026.</p>
+</div>
+
+<!-- Toggle old news script -->
+<script>
+$(document).ready(function() {
+    $('#toggle-news').click(function(e) {
+        e.preventDefault();
+        $('#old-news').slideToggle();
+        var caret = $(this).find('.caret');
+        const down = '\u25BC';
+        const up = '\u25B2';
+        if (caret.text() === down) {
+            caret.text(up);
+        } else {
+            caret.text(down);
+        }
+    });
+});
+
+// Smooth scroll for section links
+$(document).ready(function() {
+    $('#navbar a[href^="#"]').on('click', function(e) {
+        const targetId = $(this).attr('href');
+        if (!targetId || targetId === '#') return;
+
+        if (targetId === '#top') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+            e.preventDefault();
+            const offset = targetEl.getBoundingClientRect().top + window.pageYOffset - 70;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+    });
+});
+
+// Publications tabs
+$(document).ready(function() {
+    const publications = $('#selected-publications');
+    const pubItems = publications.find('.pub-item');
+    const selectedItems = pubItems.filter('[data-selected="true"]');
+    const tabSelected = $('#pub-tab-selected');
+    const tabAll = $('#pub-tab-all');
+
+    function showSelected() {
+        tabSelected.addClass('active');
+        tabAll.removeClass('active');
+        pubItems.hide();
+        selectedItems.show();
+    }
+
+    function showAll() {
+        tabSelected.removeClass('active');
+        tabAll.addClass('active');
+        pubItems.show();
+        $('html, body').animate({
+            scrollTop: $('#pub').offset().top - 70
+        }, 200);
+    }
+
+    tabSelected.on('click', function(e) {
+        e.preventDefault();
+        showSelected();
+    });
+
+    tabAll.on('click', function(e) {
+        e.preventDefault();
+        showAll();
+    });
+
+    $('#navbar a[href="#pub"]').on('click', function() {
+        setTimeout(showAll, 120);
+    });
+
+    if (window.location.hash === '#pub') {
+        showAll();
+    } else {
+        showSelected();
+    }
+});
+
+// Full bio toggle
+$(document).ready(function() {
+    const fullBio = $('#full-bio');
+    const toggle = $('#toggle-bio');
+    const hide = $('#hide-bio');
+    const caret = $('.bio-caret');
+    const down = '\u25BC';
+    const up = '\u25B2';
+
+    hide.hide();
+
+    function openBio() {
+        fullBio.slideDown(200);
+        caret.text(up);
+        toggle.hide();
+        hide.show();
+        $('html, body').animate({
+            scrollTop: fullBio.offset().top - 80
+        }, 250);
+    }
+
+    function closeBio() {
+        fullBio.slideUp(200);
+        caret.text(down);
+        toggle.show();
+        hide.hide();
+    }
+
+    toggle.on('click', function(e) {
+        e.preventDefault();
+        openBio();
+    });
+
+    hide.on('click', function(e) {
+        e.preventDefault();
+        closeBio();
+    });
+});
+
+// Service toggle
+$(document).ready(function() {
+    const serviceSection = $('#service-section');
+    const serviceToggle = $('#toggle-service');
+    const serviceCaret = $('.service-caret');
+    const down = '\u25BC';
+    const up = '\u25B2';
+
+    function openService() {
+        serviceSection.slideDown(200);
+        serviceCaret.text(up);
+    }
+
+    function closeService() {
+        serviceSection.slideUp(200);
+        serviceCaret.text(down);
+    }
+
+    serviceToggle.on('click', function(e) {
+        e.preventDefault();
+        if (serviceSection.is(':visible')) {
+            closeService();
+        } else {
+            openService();
+        }
+    });
+
+    $('#navbar a[href="#service"]').on('click', function() {
+        setTimeout(openService, 120);
+    });
+
+    if (window.location.hash === '#service') {
+        openService();
+    }
+});
+</script>
+
+<!-- Dark mode toggle script -->
+<script>
+$(document).ready(function() {
+    const toggle = $('#theme-toggle');
+    const html = $('html');
+    const icon = toggle.find('i');
+
+    function updateIcon(isDark) {
+        if (isDark) {
+            icon.removeClass('fa-moon-o').addClass('fa-sun-o');
+        } else {
+            icon.removeClass('fa-sun-o').addClass('fa-moon-o');
+        }
+    }
+
+    const isDark = html.hasClass('dark-mode');
+    updateIcon(isDark);
+
+    toggle.on('click', function() {
+        const isDark = html.hasClass('dark-mode');
+        try {
+            if (isDark) {
+                html.removeClass('dark-mode');
+                localStorage.setItem('theme', 'light');
+                updateIcon(false);
+            } else {
+                html.addClass('dark-mode');
+                localStorage.setItem('theme', 'dark');
+                updateIcon(true);
+            }
+        } catch (e) {
+            if (isDark) {
+                html.removeClass('dark-mode');
+                updateIcon(false);
+            } else {
+                html.addClass('dark-mode');
+                updateIcon(true);
+            }
+        }
+    });
+
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            try {
+                if (!localStorage.getItem('theme')) {
+                    if (e.matches) {
+                        html.addClass('dark-mode');
+                        updateIcon(true);
+                    } else {
+                        html.removeClass('dark-mode');
+                        updateIcon(false);
+                    }
+                }
+            } catch (err) {
+                // Continue without localStorage
+            }
+        });
+    }
+});
+</script>
+</body>
+</html>
